@@ -2,9 +2,8 @@
 
 ### Resources
 Create an ec2 instance on AWS t2.micro (AWS free tier) is not enough resources for druid,
-so install druid on t2.medium (2 vcores, 4GB memory).
+so install druid on t2.medium (amazon linux, 2 vcores, 4GB memory).
 
-Minimum memory required for starting services is 4250m
 
 for more details: https://druid.apache.org/docs/latest/operations/single-server.html
 
@@ -55,14 +54,26 @@ add to the list of extensions
 
 ```druid.extensions.loadList=["druid-avro-extensions", "druid-parquet-extensions"]```
 
-# Work with Druid
-load data from parquet file sources:
+## Work with Druid
+### load data from parquet file sources:
 [top-reviews.parquet
 ](https://github.com/ofirshmuel/druid-insallation/raw/main/top-reviews.parquet)
 
 [funniest_recommendation.parquet
 ](https://github.com/ofirshmuel/druid-insallation/raw/main/funniest_recommendation.parquet)
 
-monitor data and logs:
+step 1: load the data from the source
+![image](images/druid-load-data-step1.PNG)
 
-apache-druid-26.0.0/logs
+![image](images/druid-load-data-step2.PNG)
+
+transform data, configure schema, partition data to segments and tune the data.
+
+test the data with the example sql
+
+### monitor data, ingestions, tasks and logs:
+For general logs and druid commponents: ```apache-druid-26.0.0/logs```
+
+For indexing tasks logs: ```var/druid/indexing-logs```
+
+examples for successful indexing logs in `logs` folder
