@@ -1,4 +1,4 @@
-# druid-insallation
+# druid insallation
 
 Resources:
 t2.micro (AWS free tier) is not enough resources for druid so
@@ -49,3 +49,10 @@ vim /home/ec2-user/apache-druid-26.0.0/conf/druid/single-server/nano-quickstart/
 add to the list of extensions
 
 ```druid.extensions.loadList=["druid-avro-extensions", "druid-parquet-extensions"]```
+
+# Work with Druid
+load data from parquet file sources:
+[top-reviews.parquet
+](https://github.com/ofirshmuel/druid-insallation/raw/main/top-reviews.parquet)
+[funniest_recommendation.parquet
+](https://github.com/ofirshmuel/druid-insallation/raw/main/funniest_recommendation.parquet)
