@@ -17,3 +17,7 @@ SELECT * FROM "top-reviews" where "user_id" = 40425
 
 -- check if there are users in common in the 2 datasources
 SELECT * FROM "top-reviews" t join "funniest_recommendation" f on (t."user_id" = f.user_id)
+
+-- check amount of each table
+SELECT COUNT(*) FROM "funniest_recommendation"
+SELECT COUNT(*) FROM "top-reviews"
