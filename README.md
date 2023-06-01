@@ -1,8 +1,7 @@
 # druid insallation
 
 ### Resources
-Create an ec2 instance on AWS t2.micro (AWS free tier) is not enough resources for druid,
-so install druid on t2.medium (amazon linux, 2 vcores, 4GB memory).
+To ensure sufficient resources for Druid, it is recommended to install it on an AWS EC2 instance of type t2.medium. This instance type, which runs Amazon Linux and offers 2 vCPUs and 4GB of memory, provides more resources compared to t2.micro, which is part of the AWS free tier.
 
 
 for more details: https://druid.apache.org/docs/latest/operations/single-server.html
