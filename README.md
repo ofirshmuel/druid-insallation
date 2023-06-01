@@ -29,8 +29,8 @@ wget https://dlcdn.apache.org/druid/26.0.0/apache-druid-26.0.0-bin.tar.gz
 tar -xzf apache-druid-26.0.0-bin.tar.gz
 cd apache-druid-26.0.0
 
-# run druid
-./bin/start-druid
+# run druid only nano (because of resources)
+./bin/start-nano-quickstart &
 ```
 
 ## problems:
