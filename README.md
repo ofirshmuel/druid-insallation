@@ -6,6 +6,8 @@ To ensure sufficient resources for Druid, it is recommended to install it on an 
 
 for more details: https://druid.apache.org/docs/latest/operations/single-server.html
 
+for more details on cluster tuning: https://druid.apache.org/docs/latest/operations/basic-cluster-tuning.html
+
 ### security rule:
 allow 8888 port for druid web ui
 ![image](images/add-security-group-rule-port-8888.jpg)
