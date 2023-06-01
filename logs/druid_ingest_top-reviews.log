@@ -1,0 +1,69 @@
+2023-06-01T18:27:14,669 INFO [main] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Attempting to lock file[/home/ec2-user/apache-druid-26.0.0/var/druid/task/index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z/lock].
+2023-06-01T18:27:14,670 INFO [main] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Acquired lock file[/home/ec2-user/apache-druid-26.0.0/var/druid/task/index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z/lock] in 1ms.
+2023-06-01T18:27:14,680 INFO [main] org.apache.druid.indexing.common.task.AbstractBatchIndexTask - forceTimeChunkLock[true] is set to true or mode[REPLACE_LEGACY] is replace. Use timeChunk lock
+2023-06-01T18:27:14,683 INFO [main] org.apache.druid.segment.loading.SegmentLocalCacheManager - Using storage location strategy: [LeastBytesUsedStorageLocationSelectorStrategy]
+2023-06-01T18:27:14,690 INFO [task-runner-0-priority-0] org.apache.druid.indexing.overlord.SingleTaskBackgroundRunner - Running task: index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z
+2023-06-01T18:27:14,696 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [SERVER]
+2023-06-01T18:27:14,696 WARN [task-runner-0-priority-0] org.apache.druid.indexing.common.task.batch.parallel.ParallelIndexSupervisorTask - Intervals are missing in granularitySpec while this task is potentially overwriting existing segments. Forced to use timeChunk lock.
+2023-06-01T18:27:14,697 WARN [task-runner-0-priority-0] org.apache.druid.indexing.common.task.batch.parallel.ParallelIndexSupervisorTask - maxNumConcurrentSubTasks[1] is less than or equal to 1. Running sequentially. Please set maxNumConcurrentSubTasks to something higher than 1 if you want to run in parallel ingestion mode.
+2023-06-01T18:27:14,700 INFO [main] org.eclipse.jetty.server.Server - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.19+7-LTS
+2023-06-01T18:27:14,704 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.AbstractBatchIndexTask - forceTimeChunkLock[true] is set to true or mode[REPLACE_LEGACY] is replace. Use timeChunk lock
+2023-06-01T18:27:14,706 WARN [task-runner-0-priority-0] org.apache.druid.indexing.common.task.IndexTask - Chat handler is already registered. Skipping chat handler registration.
+2023-06-01T18:27:14,726 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.IndexTask - Determining intervals and shardSpecs
+2023-06-01T18:27:14,774 INFO [main] org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2023-06-01T18:27:14,775 INFO [main] org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2023-06-01T18:27:14,776 INFO [main] org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2023-06-01T18:27:14,967 INFO [main] com.sun.jersey.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2023-06-01T18:27:15,021 WARN [task-runner-0-priority-0] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-06-01T18:27:15,809 INFO [main] org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@99948fe{/,null,AVAILABLE}
+2023-06-01T18:27:15,835 INFO [main] org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5527314d{HTTP/1.1, (http/1.1)}{0.0.0.0:8100}
+2023-06-01T18:27:15,838 INFO [main] org.eclipse.jetty.server.Server - Started @8318ms
+2023-06-01T18:27:15,838 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [ANNOUNCEMENTS]
+2023-06-01T18:27:15,839 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Successfully started lifecycle [module]
+2023-06-01T18:27:16,617 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - RecordReader initialized will read a total of 50 records.
+2023-06-01T18:27:16,618 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - at row 0. reading next block
+2023-06-01T18:27:16,647 INFO [task-runner-0-priority-0] org.apache.hadoop.io.compress.CodecPool - Got brand-new decompressor [.snappy]
+2023-06-01T18:27:16,652 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - block read in memory in 34 ms. row count = 50
+2023-06-01T18:27:16,902 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.IndexTask - Found intervals and shardSpecs in 2,176ms
+2023-06-01T18:27:16,903 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.AbstractBatchIndexTask - forceTimeChunkLock[true] is set to true or mode[REPLACE_LEGACY] is replace. Use timeChunk lock
+2023-06-01T18:27:17,233 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - RecordReader initialized will read a total of 50 records.
+2023-06-01T18:27:17,234 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - at row 0. reading next block
+2023-06-01T18:27:17,234 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - block read in memory in 0 ms. row count = 50
+2023-06-01T18:27:17,327 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Pushing [1] segments in background
+2023-06-01T18:27:17,333 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Pushing segments: [top-reviews_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:27:17.059Z]
+2023-06-01T18:27:17,338 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Persisted rows[50] and (estimated) bytes[5,200]
+2023-06-01T18:27:17,484 INFO [[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Flushed in-memory data for segment[top-reviews_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:27:17.059Z] spill[0] to disk in [135] ms (50 rows).
+2023-06-01T18:27:17,487 INFO [[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Flushed in-memory data with commit metadata [null] for segments: top-reviews_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:27:17.059Z
+2023-06-01T18:27:17,487 INFO [[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Persisted stats: processed rows: [50], persisted rows[50], sinks: [1], total fireHydrants (across sinks): [1], persisted fireHydrants (across sinks): [1]
+2023-06-01T18:27:17,493 INFO [[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z]-appenderator-merge] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Preparing to push (stats): processed rows: [50], sinks: [1], fireHydrants (across sinks): [1]
+2023-06-01T18:27:17,630 INFO [[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z]-appenderator-merge] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Segment[top-reviews_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:27:17.059Z] of 1,829 bytes built from 1 incremental persist(s) in 103ms; pushed to deep storage in 7ms. Load spec is: {"type":"local","path":"/home/ec2-user/apache-druid-26.0.0/var/druid/segments/top-reviews/2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z/2023-06-01T18:27:17.059Z/0/index/"}
+2023-06-01T18:27:17,631 INFO [[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z]-appenderator-merge] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Push complete...
+2023-06-01T18:27:17,667 INFO [[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Dropped segment[top-reviews_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:27:17.059Z].
+2023-06-01T18:27:17,742 INFO [[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z]-publish] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Published [1] segments with commit metadata [null]
+2023-06-01T18:27:17,745 INFO [[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z]-publish] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Published segments: [top-reviews_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:27:17.059Z]
+2023-06-01T18:27:17,748 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.IndexTask - Processed[50] events, unparseable[0], thrownAway[0].
+2023-06-01T18:27:17,748 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.IndexTask - Published [1] segments
+2023-06-01T18:27:17,757 WARN [task-runner-0-priority-0] org.apache.druid.segment.realtime.firehose.ServiceAnnouncingChatHandlerProvider - handler[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z] not currently registered, ignoring.
+2023-06-01T18:27:17,762 INFO [task-runner-0-priority-0] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Task completed with status: {
+  "id" : "index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z",
+  "status" : "SUCCESS",
+  "duration" : 3068,
+  "errorMsg" : null,
+  "location" : {
+    "host" : null,
+    "port" : -1,
+    "tlsPort" : -1
+  }
+}
+2023-06-01T18:27:17,769 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [ANNOUNCEMENTS]
+2023-06-01T18:27:17,770 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [SERVER]
+2023-06-01T18:27:17,779 INFO [main] org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@5527314d{HTTP/1.1, (http/1.1)}{0.0.0.0:8100}
+2023-06-01T18:27:17,779 INFO [main] org.eclipse.jetty.server.session - node0 Stopped scavenging
+2023-06-01T18:27:17,783 INFO [main] org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@99948fe{/,null,STOPPED}
+2023-06-01T18:27:17,792 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [NORMAL]
+2023-06-01T18:27:17,793 INFO [main] org.apache.druid.indexing.overlord.SingleTaskBackgroundRunner - Starting graceful shutdown of task[index_parallel_top-reviews_kbhekkjc_2023-06-01T18:27:07.326Z].
+2023-06-01T18:27:17,820 INFO [LookupExtractorFactoryContainerProvider-MainThread] org.apache.druid.query.lookup.LookupReferencesManager - Lookup Management loop exited. Lookup notices are not handled anymore.
+2023-06-01T18:27:17,831 INFO [Curator-Framework-0] org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+2023-06-01T18:27:17,941 INFO [main-EventThread] org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x100000be4ff0007
+2023-06-01T18:27:17,941 INFO [main] org.apache.zookeeper.ZooKeeper - Session: 0x100000be4ff0007 closed
+2023-06-01T18:27:17,956 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle
