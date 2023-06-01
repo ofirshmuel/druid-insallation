@@ -7,7 +7,7 @@ Minimum memory required for starting services is 4250m
 
 ### security rule:
 allow 8888 port for druid web ui
-[image]
+![image](images/add-security-group-rule-port-8888.PNG)
 
 The software requirements for the installation machine are:
 Linux, Mac OS X, or other Unix-like OS. (Windows is not supported)
