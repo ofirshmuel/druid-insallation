@@ -1,30 +1,32 @@
 # druid insallation
 
 ### Resources
-t2.micro (AWS free tier) is not enough resources for druid so
-I will install druid on t2.medium.
+Create an ec2 instance on AWS t2.micro (AWS free tier) is not enough resources for druid,
+so install druid on t2.medium (2 vcores, 4GB memory).
+
 Minimum memory required for starting services is 4250m
+
+for more details: https://druid.apache.org/docs/latest/operations/single-server.html
 
 ### security rule:
 allow 8888 port for druid web ui
 ![image](images/add-security-group-rule-port-8888.jpg)
 
-The software requirements for the installation machine are:
-Linux, Mac OS X, or other Unix-like OS. (Windows is not supported)
-Java 8u92+ or Java 11
+**The software requirements for the installation machine are:**
+* Java 8u92+ or Java 11
 ```bash
 sudo yum install java-11
 ```
-Python 3 (preferred) or Python 2 : already installed
-Perl 5 : already installed
+* Python 3 (preferred) or Python 2 : already installed
+* Perl 5 : already installed
 ```bash
 sudo yum install perl
 ```
 
 ## installations:
 
-## environments variables
-export JAVA_HOME=
+environments variables:
+```export JAVA_HOME=```
 
 install Druid
 ```bash
@@ -57,5 +59,10 @@ add to the list of extensions
 load data from parquet file sources:
 [top-reviews.parquet
 ](https://github.com/ofirshmuel/druid-insallation/raw/main/top-reviews.parquet)
+
 [funniest_recommendation.parquet
 ](https://github.com/ofirshmuel/druid-insallation/raw/main/funniest_recommendation.parquet)
+
+monitor data and logs:
+
+apache-druid-26.0.0/logs
