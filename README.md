@@ -66,7 +66,7 @@ step 1: load the data from the source
 
 ![image](images/druid-load-data-step2.PNG)
 
-transform data, configure schema, partition data to segments and tune the data.
+data manuipulation, transform data, configure schema, partition data to segments and tune the data.
 
 test the data with the example sql
 
