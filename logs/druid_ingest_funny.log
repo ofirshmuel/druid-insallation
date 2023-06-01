@@ -1,0 +1,70 @@
+2023-06-01T18:11:15,801 INFO [main] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Attempting to lock file[/home/ec2-user/apache-druid-26.0.0/var/druid/task/index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z/lock].
+2023-06-01T18:11:15,802 INFO [main] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Acquired lock file[/home/ec2-user/apache-druid-26.0.0/var/druid/task/index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z/lock] in 1ms.
+2023-06-01T18:11:15,804 INFO [main] org.apache.druid.indexing.common.task.AbstractBatchIndexTask - forceTimeChunkLock[true] is set to true or mode[REPLACE_LEGACY] is replace. Use timeChunk lock
+2023-06-01T18:11:15,806 INFO [main] org.apache.druid.segment.loading.SegmentLocalCacheManager - Using storage location strategy: [LeastBytesUsedStorageLocationSelectorStrategy]
+2023-06-01T18:11:15,817 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [SERVER]
+2023-06-01T18:11:15,820 INFO [main] org.eclipse.jetty.server.Server - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.19+7-LTS
+2023-06-01T18:11:15,819 INFO [task-runner-0-priority-0] org.apache.druid.indexing.overlord.SingleTaskBackgroundRunner - Running task: index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z
+2023-06-01T18:11:15,843 WARN [task-runner-0-priority-0] org.apache.druid.indexing.common.task.batch.parallel.ParallelIndexSupervisorTask - Intervals are missing in granularitySpec while this task is potentially overwriting existing segments. Forced to use timeChunk lock.
+2023-06-01T18:11:15,844 WARN [task-runner-0-priority-0] org.apache.druid.indexing.common.task.batch.parallel.ParallelIndexSupervisorTask - maxNumConcurrentSubTasks[1] is less than or equal to 1. Running sequentially. Please set maxNumConcurrentSubTasks to something higher than 1 if you want to run in parallel ingestion mode.
+2023-06-01T18:11:15,849 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.AbstractBatchIndexTask - forceTimeChunkLock[true] is set to true or mode[REPLACE_LEGACY] is replace. Use timeChunk lock
+2023-06-01T18:11:15,851 WARN [task-runner-0-priority-0] org.apache.druid.indexing.common.task.IndexTask - Chat handler is already registered. Skipping chat handler registration.
+2023-06-01T18:11:15,870 INFO [main] org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2023-06-01T18:11:15,870 INFO [main] org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2023-06-01T18:11:15,871 INFO [main] org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+2023-06-01T18:11:15,873 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.IndexTask - Determining intervals and shardSpecs
+2023-06-01T18:11:16,130 INFO [main] com.sun.jersey.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2023-06-01T18:11:16,193 WARN [task-runner-0-priority-0] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-06-01T18:11:17,255 INFO [main] org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1f4b8027{/,null,AVAILABLE}
+2023-06-01T18:11:17,285 INFO [main] org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@7de403ea{HTTP/1.1, (http/1.1)}{0.0.0.0:8100}
+2023-06-01T18:11:17,286 INFO [main] org.eclipse.jetty.server.Server - Started @8883ms
+2023-06-01T18:11:17,286 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [ANNOUNCEMENTS]
+2023-06-01T18:11:17,287 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Successfully started lifecycle [module]
+2023-06-01T18:11:17,863 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - RecordReader initialized will read a total of 10 records.
+2023-06-01T18:11:17,863 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - at row 0. reading next block
+2023-06-01T18:11:17,893 INFO [task-runner-0-priority-0] org.apache.hadoop.io.compress.CodecPool - Got brand-new decompressor [.snappy]
+2023-06-01T18:11:17,898 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - block read in memory in 35 ms. row count = 10
+2023-06-01T18:11:18,163 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.IndexTask - Found intervals and shardSpecs in 2,290ms
+2023-06-01T18:11:18,164 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.AbstractBatchIndexTask - forceTimeChunkLock[true] is set to true or mode[REPLACE_LEGACY] is replace. Use timeChunk lock
+2023-06-01T18:11:18,583 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - RecordReader initialized will read a total of 10 records.
+2023-06-01T18:11:18,583 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - at row 0. reading next block
+2023-06-01T18:11:18,584 INFO [task-runner-0-priority-0] org.apache.parquet.hadoop.InternalParquetRecordReader - block read in memory in 1 ms. row count = 10
+2023-06-01T18:11:18,676 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Pushing [1] segments in background
+2023-06-01T18:11:18,680 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Pushing segments: [funniest_recommendation_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:11:18.335Z]
+2023-06-01T18:11:18,685 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Persisted rows[10] and (estimated) bytes[1,920]
+2023-06-01T18:11:18,926 INFO [[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Flushed in-memory data for segment[funniest_recommendation_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:11:18.335Z] spill[0] to disk in [230] ms (10 rows).
+2023-06-01T18:11:18,933 INFO [[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Flushed in-memory data with commit metadata [null] for segments: funniest_recommendation_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:11:18.335Z
+2023-06-01T18:11:18,934 INFO [[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Persisted stats: processed rows: [10], persisted rows[10], sinks: [1], total fireHydrants (across sinks): [1], persisted fireHydrants (across sinks): [1]
+2023-06-01T18:11:18,936 INFO [[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z]-appenderator-merge] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Preparing to push (stats): processed rows: [10], sinks: [1], fireHydrants (across sinks): [1]
+2023-06-01T18:11:19,104 INFO [[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z]-appenderator-merge] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Segment[funniest_recommendation_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:11:18.335Z] of 1,972 bytes built from 1 incremental persist(s) in 124ms; pushed to deep storage in 8ms. Load spec is: {"type":"local","path":"/home/ec2-user/apache-druid-26.0.0/var/druid/segments/funniest_recommendation/2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z/2023-06-01T18:11:18.335Z/0/index/"}
+2023-06-01T18:11:19,105 INFO [[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z]-appenderator-merge] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Push complete...
+2023-06-01T18:11:19,126 INFO [[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.AppenderatorImpl - Dropped segment[funniest_recommendation_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:11:18.335Z].
+2023-06-01T18:11:19,272 INFO [[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z]-publish] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Published [1] segments with commit metadata [null]
+2023-06-01T18:11:19,274 INFO [[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z]-publish] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Published segments: [funniest_recommendation_2010-01-01T00:00:00.000Z_2010-01-02T00:00:00.000Z_2023-06-01T18:11:18.335Z]
+2023-06-01T18:11:19,277 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.IndexTask - Processed[10] events, unparseable[0], thrownAway[0].
+2023-06-01T18:11:19,277 INFO [task-runner-0-priority-0] org.apache.druid.indexing.common.task.IndexTask - Published [1] segments
+2023-06-01T18:11:19,289 WARN [task-runner-0-priority-0] org.apache.druid.segment.realtime.firehose.ServiceAnnouncingChatHandlerProvider - handler[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z] not currently registered, ignoring.
+2023-06-01T18:11:19,292 INFO [task-runner-0-priority-0] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Task completed with status: {
+  "id" : "index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z",
+  "status" : "SUCCESS",
+  "duration" : 3470,
+  "errorMsg" : null,
+  "location" : {
+    "host" : null,
+    "port" : -1,
+    "tlsPort" : -1
+  }
+}
+2023-06-01T18:11:19,306 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [ANNOUNCEMENTS]
+2023-06-01T18:11:19,306 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [SERVER]
+2023-06-01T18:11:19,320 INFO [main] org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@7de403ea{HTTP/1.1, (http/1.1)}{0.0.0.0:8100}
+2023-06-01T18:11:19,320 INFO [main] org.eclipse.jetty.server.session - node0 Stopped scavenging
+2023-06-01T18:11:19,322 INFO [main] org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1f4b8027{/,null,STOPPED}
+2023-06-01T18:11:19,332 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [NORMAL]
+2023-06-01T18:11:19,333 INFO [main] org.apache.druid.indexing.overlord.SingleTaskBackgroundRunner - Starting graceful shutdown of task[index_parallel_funniest_recommendation_mfgbcbka_2023-06-01T18:11:07.641Z].
+2023-06-01T18:11:19,359 INFO [LookupExtractorFactoryContainerProvider-MainThread] org.apache.druid.query.lookup.LookupReferencesManager - Lookup Management loop exited. Lookup notices are not handled anymore.
+2023-06-01T18:11:19,368 INFO [Curator-Framework-0] org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+2023-06-01T18:11:19,477 INFO [main-EventThread] org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x100000be4ff0006
+2023-06-01T18:11:19,477 INFO [main] org.apache.zookeeper.ZooKeeper - Session: 0x100000be4ff0006 closed
+2023-06-01T18:11:19,497 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [INIT]
+Finished peon task
