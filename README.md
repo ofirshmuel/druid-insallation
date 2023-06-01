@@ -1,11 +1,14 @@
 # druid insallation
 
-Resources:
+### Resources
 t2.micro (AWS free tier) is not enough resources for druid so
 I will install druid on t2.medium.
 Minimum memory required for starting services is 4250m
-security rule:
+
+### security rule:
 allow 8888 port for druid web ui
+[image]
+
 The software requirements for the installation machine are:
 Linux, Mac OS X, or other Unix-like OS. (Windows is not supported)
 Java 8u92+ or Java 11
@@ -29,7 +32,7 @@ wget https://dlcdn.apache.org/druid/26.0.0/apache-druid-26.0.0-bin.tar.gz
 tar -xzf apache-druid-26.0.0-bin.tar.gz
 cd apache-druid-26.0.0
 
-# run druid only nano (because of resources)
+# run druid only nano (because of the resources)
 ./bin/start-nano-quickstart &
 ```
 
