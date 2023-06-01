@@ -46,7 +46,7 @@ https://druid.apache.org/docs/latest/development/extensions.html
 https://druid.apache.org/docs/latest/development/extensions-core/parquet.html
 
 ```bash
-vim /home/ec2-user/apache-druid-26.0.0/conf/druid/single-server/nano-quickstart/_common/common.runtime.properties
+vim apache-druid-26.0.0/conf/druid/single-server/nano-quickstart/_common/common.runtime.properties
 ```
 
 add to the list of extensions
